@@ -4,7 +4,7 @@
       {
         "src": "app-documents-ia/package.json",
         "use": "@vercel/static-build",
-        "config": { "distDir": "app-documents-ia/dist" }
+        "config": { "distDir": "./app-documents-ia/dist" }
       },
       {
         "src": "back-end-doc-ia/main.py",
