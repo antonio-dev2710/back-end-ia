@@ -14,8 +14,8 @@ import { fileURLToPath, URL } from 'node:url'
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    outDir: 'dist', // Diretório de saída para arquivos estáticos
-    sourcemap: true, // Útil para depuração em produção
+    outDir: 'dist', 
+    sourcemap: true, 
   },
   plugins: [
     VueRouter(),
