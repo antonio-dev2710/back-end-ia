@@ -9,10 +9,7 @@
         }
       }
     ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
-    ]
+    "framework": "vue",
+    "buildCommand": "npm run build" 
   }
+  
