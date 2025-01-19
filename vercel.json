@@ -1,13 +1,15 @@
 {
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "back-end-doc-ia/main.py"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "app-documents-ia/dist/$1"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "main.py"
+    }
+  ]
+}
