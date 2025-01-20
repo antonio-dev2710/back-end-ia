@@ -17,6 +17,9 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+CORS(app, resources={r"/test-openai": {"origins": "https://app-documents-ia.vercel.app"}})
+
+
 @app.route('/test-openai', methods=['POST'])
 def test_openai():
     try:
