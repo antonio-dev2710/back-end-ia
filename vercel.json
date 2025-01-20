@@ -2,14 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "main.py",
+      "src": "app.py",
       "use": "@vercel/python"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "main.py"
-    }
-  ]
+  "env": {
+    "OPENAI_API_KEY": "@openai-api-key"
+  }
 }
